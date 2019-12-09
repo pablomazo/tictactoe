@@ -96,7 +96,7 @@ class TicTacToe_Board:
 		return self.board.reshape(9)
 
 	def avail_actions(self, board):
-		# Returns the available actions for a given board state..
+		# Returns the available actions for a given board state.
 		actions = []
 
 		# Each action is given as a vector with a one in the free position.

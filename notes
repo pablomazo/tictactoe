@@ -1,0 +1,17 @@
+Version 1:
+Versión entrenada contra un jugador perfecto.
+
+Parece que ha aprendido muy bien a jugar contra un jugador perfecto
+"hardcode" ya que gana muchas de las partidas, pero cuando juega 
+contra uno mediano es un poco mediocre.
+
+Cuando la AI está a una jugada de ganar y haces un movimiento
+incorrecto (es decir, le dejas ganar) hace movimientos que no tienen
+sentido.
+
+Entiendo que hay que meter también en el replaymemory movimientos del
+otro jugador que no tienen ningún sentido para que sea capaz de 
+reaccionar correctamente ante ellos.
+
+Para ello, en la siguiente versión voy a dejar que de vez en cuando
+el jugador hardcode pueda hacer algún movimiento aleatorio.

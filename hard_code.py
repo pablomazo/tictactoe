@@ -12,6 +12,7 @@ class hardcode:
 				theBoard[my2computer[i]]='X'
 			elif state[i] == -1:
 				theBoard[my2computer[i]]='O'
+		print(theBoard)
 		move = self.getComputerMove(theBoard, 'O')
 
 		if move == 1: return 6
