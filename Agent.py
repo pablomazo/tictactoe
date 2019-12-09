@@ -27,6 +27,7 @@ class AIAgent:
 
 	def select_action(self, state, avail_actions):
 		# Select action from policy:
+		nactions = len(avail_actions)
 		policy_value = self.policy(torch.Tensor(state))
 		iaction = policy_value.max(0)[1].view(1,1)
 		if iaction.item() not in avail_actions:

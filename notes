@@ -1,5 +1,6 @@
 Version 1:
 Versión entrenada contra un jugador perfecto.
+Juega primero la AI
 
 Parece que ha aprendido muy bien a jugar contra un jugador perfecto
 "hardcode" ya que gana muchas de las partidas, pero cuando juega 
@@ -19,6 +20,9 @@ el jugador hardcode pueda hacer algún movimiento aleatorio.
 Version 2:
 Versión entrenada contra jugador perfecto permitiendo que a veces
 haga jugadas aleatorias.
+Juega primero la AI
 
 El modelo parece ser mucho más robusto ahora. Incluso al hacer alguna
 jugada aleatoria el agente sabe resolverlo.
+
+Puede que el modelo tenga un poco de underfitting...
