@@ -39,7 +39,7 @@ class AIAgent:
 		self.policy.load_state_dict(torch.load(file))
 
 	def win_message(self):
-		print("I won at TicTacToe. Now I'm ready to conquer the world")
+		print("I won at TicTacToe. Now I'm ready to conquer the world.")
 
 class RandomAgent:
 	def select_action(self, state, avail_actions):
@@ -65,3 +65,6 @@ class HumanAgent:
 	
 			action = 3*i+j
 		return action
+
+	def win_message(self):
+		print("You won!!!")

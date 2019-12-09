@@ -25,7 +25,7 @@ class hardcode:
 		elif move == 9: return 2
 
 	def win_message(self):
-		print("Well played, but I'm hardcoded")
+		print("Well played, but I'm hardcoded.")
 
 	def makeMove(self,board, letter, move):
 	
