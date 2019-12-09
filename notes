@@ -15,3 +15,10 @@ reaccionar correctamente ante ellos.
 
 Para ello, en la siguiente versión voy a dejar que de vez en cuando
 el jugador hardcode pueda hacer algún movimiento aleatorio.
+
+Version 2:
+Versión entrenada contra jugador perfecto permitiendo que a veces
+haga jugadas aleatorias.
+
+El modelo parece ser mucho más robusto ahora. Incluso al hacer alguna
+jugada aleatoria el agente sabe resolverlo.

@@ -17,6 +17,7 @@ class TicTacToe_Board:
 		self.board = np.zeros([3,3])
 		self.turn = 1
 		self.end = False
+		self.winner = None
 
 	def play(self, i, j):
 		# If position is free:
@@ -26,21 +27,21 @@ class TicTacToe_Board:
 			self.turn = -1 if self.turn == 1 else 1
 
 			# Check if there is a winner after the move:
-			winner = self.check_end()
+			self.winner = self.check_end()
 
 			# Get new state of the game:
 			new_state = self.get_state().copy()
 
-			if winner is None:
+			if self.winner is None:
 				# There is no winner:
 				return new_state, 0
-			elif winner == 1:
+			elif self.winner == 1:
 				# Player one won:
 				return new_state, 100
-			elif winner == -1:
+			elif self.winner == -1:
 				# Player two won:
 				return new_state, -1
-			elif winner == 0:
+			elif self.winner == 0:
 				# Drawn
 				return new_state, 0
 

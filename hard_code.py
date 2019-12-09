@@ -12,7 +12,6 @@ class hardcode:
 				theBoard[my2computer[i]]='X'
 			elif state[i] == -1:
 				theBoard[my2computer[i]]='O'
-		print(theBoard)
 		move = self.getComputerMove(theBoard, 'O')
 
 		if move == 1: return 6
@@ -24,6 +23,9 @@ class hardcode:
 		elif move == 7: return 0
 		elif move == 8: return 1
 		elif move == 9: return 2
+
+	def win_message(self):
+		print("Well played, but I'm hardcoded")
 
 	def makeMove(self,board, letter, move):
 	

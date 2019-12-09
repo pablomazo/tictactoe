@@ -37,3 +37,10 @@ while not board.end:
 		state, _ = board.play(index[0],index[1])
 	
 		board.plot()
+
+if board.winner == 1:
+	player1.win_message()
+elif board.winner == -1:
+	player2.win_message()
+elif board.winner == 0:
+	print('Drawn!!')
