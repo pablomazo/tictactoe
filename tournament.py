@@ -9,9 +9,9 @@ board = TicTacToe_Board()
 # Inialize players
 policy = DQN(9,105,60,9)
 player1 = AIAgent(policy)
-player1.load_model('AIagent2.pth')
+player1.load_model('AIagent3.pth')
 player2 = AIAgent(policy)
-player2.load_model('AIagent2.pth')
+player2.load_model('AIagent1.pth')
 
 NGAMES = 1000
 
